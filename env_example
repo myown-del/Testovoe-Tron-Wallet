@@ -1,0 +1,12 @@
+API__WORKERS=1
+API__INTERNAL_HOST=0.0.0.0
+API__PORT=8080
+API__AUTO_RELOAD=true
+
+DB__HOST=postgres
+DB__PORT=5432
+DB__USER=postgres
+DB__PASSWORD=postgres
+DB__DATABASE=postgres
+
+TRON_GRID__API_KEY=xxxxxxxxxx-xxxx-xxxx-xxxxxxxx

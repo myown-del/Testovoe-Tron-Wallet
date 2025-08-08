@@ -1,0 +1,26 @@
+version: "3"
+
+name: tron-wallets
+services:
+  api:
+    restart: always
+    env_file:
+      - .env
+    build: .
+    volumes:
+      - "./src:/src"
+    ports:
+      - "8080:8080"
+    entrypoint:
+      [ "python", "-m", "src" ]
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    # volumes:
+    #   - tron-wallets-data:/var/lib/postgresql/data
