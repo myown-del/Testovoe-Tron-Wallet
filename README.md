@@ -1,6 +1,7 @@
 ## Эндпоинты
 
 1. `POST /api/wallets/details` - Получить информацию об адресе
+
     Возвращает в теле поля:
     - `wallet_address: str`
     - `bandwith: int`
@@ -10,6 +11,7 @@
 <br>
 
 2. `GET /api/logs/wallet-requests` - Получить логи запросов об адресах
+
     Принимает query params:
     - `offset: int`
     - `limit: int`
